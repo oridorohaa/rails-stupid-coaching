@@ -1,0 +1,37 @@
+
+
+<style>
+p{
+  font-size:20px;
+  }
+div{
+  margin-left:50px;
+  padding:5px;
+  border-left: 6px solid grey;
+  margin-bottom:10px;
+  margin-top:30px;
+}
+
+.answer{
+  background-color:rgb(237, 235, 194);
+  width:50vw;
+}
+.author{
+  font-style:italic;
+}
+.ask{
+  text-decoration:none;
+  font-size:20px;
+  margin:50px;
+}
+</style>
+  <%= link_to "ask another question", ask_path, class:"ask" %>
+<div>
+<p><%=@question%></p>
+<p class="author">-You</p>
+</div>
+
+<div class="answer">
+<p><%=@answer%></p>
+<p class="author">-Your Coach</p>
+</div>
